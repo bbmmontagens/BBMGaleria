@@ -1,0 +1,596 @@
+/* Estilos gerais */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #000a63;
+  color: white;
+  padding: 15px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+header h1 span {
+  color: #ff9800;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #00052e;
+}
+
+.whatsapp-button-nav {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.whatsapp-button-nav i {
+  margin-right: 8px;
+}
+
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+  background-color: #000a63;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  z-index: 1000;
+}
+
+.mobile-nav.active {
+  display: block;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav ul li {
+  text-align: center;
+  border-bottom: 1px solid #00052e;
+}
+
+.mobile-nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+.mobile-nav ul li a:hover {
+  background-color: #00052e;
+}
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 6, 74, 0.7);
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-header p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: #ff9800;
+  margin: 20px auto;
+}
+
+footer {
+  background-color: #000a63;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-col {
+  text-align: left;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.footer-logo h3 {
+  margin: 0;
+  font-size: 1.8em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-logo h3 span {
+  color: #ff9800;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 1.5em;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ff9800;
+}
+
+.footer-col h4 {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ff9800;
+}
+
+.footer-col p {
+  margin-bottom: 15px;
+}
+
+.footer-col p i {
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #00052e;
+  padding-top: 20px;
+  font-size: 0.9em;
+}
+
+.footer-bottom a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  z-index: 1001;
+}
+
+/* Estilos específicos para a galeria */
+.gallery-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 4/3;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 6, 74, 0.8), transparent);
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+  transform: translateY(0);
+}
+
+.gallery-caption h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.gallery-caption p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Modal de imagem ampliada */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1002;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  opacity: 1;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-modal:hover {
+  color: var(--secondary-color);
+}
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.modal-nav-btn {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.modal-nav-btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Filtros */
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* Animação para os itens da galeria */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-item {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+/* Delay para cada item */
+.gallery-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.gallery-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.gallery-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.gallery-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.gallery-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.gallery-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.gallery-item:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.gallery-item:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.gallery-item:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+.gallery-item:nth-child(10) {
+  animation-delay: 1s;
+}
+
+.gallery-item:nth-child(11) {
+  animation-delay: 1.1s;
+}
+
+.gallery-item:nth-child(12) {
+  animation-delay: 1.2s;
+}
+
+.gallery-item:nth-child(13) {
+  animation-delay: 1.3s;
+}
+
+.gallery-item:nth-child(14) {
+  animation-delay: 1.4s;
+}
+
+.gallery-item:nth-child(15) {
+  animation-delay: 1.5s;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .gallery-caption {
+    transform: translateY(0);
+    background: rgba(0, 6, 74, 0.7);
+  }
+
+  .modal-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .close-modal {
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+  }
+}
