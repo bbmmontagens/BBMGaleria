@@ -594,3 +594,37 @@ footer {
     font-size: 30px;
   }
 }
+/* Estilos para a seção VEJA MAIS */
+.more-gallery {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.more-gallery .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.more-gallery .gallery-item {
+    aspect-ratio: 1/1;
+}
+
+.more-gallery .gallery-item:hover {
+    transform: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.more-gallery .gallery-item img {
+    transition: none;
+}
+
+.more-gallery .gallery-item:hover img {
+    transform: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .more-gallery .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
